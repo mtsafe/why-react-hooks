@@ -1,11 +1,18 @@
 # WhyReactHooks
 Examples of the 10 React Hooks
 
+Basic Hooks
 . useState() - Returns a stateful value and a function to update it
 . useEffect() - Performs side effects in function components
 . useContext()
+Additional Hooks
 . useReducer()
+. useCallback()
+. useMemo()
 . useRef()
+. useImperativeHandle()
+. useLayoutEffect()
+. useDebugValue()
 
 
 
