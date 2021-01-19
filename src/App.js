@@ -1,13 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import BtnOld from './component/BtnOld/BtnOld.component';
-import { useState } from 'react';
+import BtnUseState from './component/BtnUseState/BtnUseState.component';
 
 function App() {
-
-  const [count, setCount ] = useState(0);
-  // count is the "reactive value"
-  // setCount is the "setter"
 
   return (
     <div className="App">
@@ -26,12 +22,10 @@ function App() {
         </a>
       </header>
       <main>
-        <p>BtnOld using class component</p>
+        <p>BtnOld class component</p>
         <BtnOld />
-        <p>Btn using useState()</p>
-        <button onClick={() => setCount(count+1)}>
-          {count}
-        </button>
+        <p>Btn functional component using useState()</p>
+        <BtnUseState />
       </main>
     </div>
   );

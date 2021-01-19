@@ -11,7 +11,10 @@ class BtnOld extends React.Component {
 
   render() {
     return (
-      <p>{this.state.count}</p>
+      <button onClick={() => this.setState({
+          count: this.state.count + 1 })}>
+        {this.state.count}
+      </button>
     );
   }
 }
