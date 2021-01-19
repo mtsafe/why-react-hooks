@@ -1,7 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import BtnOld from './component/BtnOld/BtnOld.component';
+import { useState } from 'react';
 
 function App() {
+
+  const [count, setCount ] = useState(0);
+  // count is the "reactive value"
+  // setCount is the "setter"
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +25,14 @@ function App() {
           Learn React
         </a>
       </header>
+      <main>
+        <p>BtnOld using class component</p>
+        <BtnOld />
+        <p>Btn using useState()</p>
+        <button onClick={() => setCount(count+1)}>
+          {count}
+        </button>
+      </main>
     </div>
   );
 }
