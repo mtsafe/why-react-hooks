@@ -3,6 +3,12 @@ main {
   color:aliceblue
 }
 
+button {
+  color: darkred;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
 .App {
   text-align: center;
 }
