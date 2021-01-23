@@ -2,17 +2,21 @@
 Examples of the 10 React Hooks
 
 Basic Hooks
-. useState() - Returns a stateful value and a function to update it
-. useEffect() - Performs side effects in function components
-. useContext()
+- useState() - Returns a stateful value and a function to update it. The purpose of useState() is to handle
+reactive data. When the state changes, useState is used
+to re-render the UI.
+- useEffect() - Performs side effects in function components. useEffect() is used to tell what to do for
+the component lifecycle: componentDidMount() {initialzation code},
+componentDidUpdate(){state update code}, componentWillUnmount(){destruction code}
+- useContext()
 Additional Hooks
-. useReducer()
-. useCallback()
-. useMemo()
-. useRef()
-. useImperativeHandle()
-. useLayoutEffect()
-. useDebugValue()
+- useReducer()
+- useCallback()
+- useMemo()
+- useRef()
+- useImperativeHandle()
+- useLayoutEffect()
+- useDebugValue()
 
 
 
