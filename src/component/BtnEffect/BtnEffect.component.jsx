@@ -5,17 +5,22 @@ function BtnEffect() {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    alert('useEffect Hello! componentDidMount')
+    console.log('useEffect: NoDep> Page Load')
   },[]);          // no dependencies
 
   useEffect(() => {
-    alert('useEffect Hello! componentDidUpdate')
+    console.log('useEffect: [count]> Page Load or Click')
   },[count]);     // depends on variable count
 
   useEffect(() => {
-    alert('useEffect Hello! componentSomething')
-    return () => alert('useEffect Hello! componentWillUnmount')
+    console.log('useEffect: > Page Load or Click')
+    return () => console.log('useEffect{ret}: > Click')
   });             // tear down function
+
+  useEffect(() => {
+    console.log('useEffect: NoDep> Page Load')
+    return () => console.log('useEffect{ret}: NoDep> (never)')
+  },[]);             // tear down function
 
   //  // Infiniteloop (bad)
   // useEffect(() => {
@@ -29,7 +34,10 @@ function BtnEffect() {
 
   if (count < 2) {
     return (
-      <button onClick={() => setCount(count+1)}>
+      <button onClick={() => {
+        console.log('BtnEffect Clicked');
+        setCount(count+1);
+      }}>
         {count}
       </button> 
     );
