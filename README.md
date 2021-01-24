@@ -8,7 +8,9 @@ to re-render the UI.
 - useEffect() - Performs side effects in function components. useEffect() is used to tell what to do for
 the component lifecycle: componentDidMount() {initialzation code},
 componentDidUpdate(){state update code}, componentWillUnmount(){destruction code}
-- useContext()
+- useContext() - Allows you to work with React's Context
+API; you can share data without passing props
+
 Additional Hooks
 - useReducer()
 - useCallback()
