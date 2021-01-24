@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import BtnOld from './component/BtnOld/BtnOld.component';
 import BtnUseState from './component/BtnUseState/BtnUseState.component';
+import BtnEffect from './component/BtnEffect/BtnEffect.component';
 
 function App() {
 
@@ -26,6 +27,8 @@ function App() {
         <BtnOld />
         <p>Btn functional component using useState()</p>
         <BtnUseState />
+        <p>BtnEffect component using useEffect()</p>
+        <BtnEffect />
       </main>
     </div>
   );
