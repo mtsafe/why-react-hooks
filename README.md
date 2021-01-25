@@ -6,8 +6,10 @@ Basic Hooks
 reactive data. When the state changes, useState is used
 to re-render the UI.
 - useEffect() - Performs side effects in function components. useEffect() is used to tell what to do for
-the component lifecycle: componentDidMount() {initialzation code},
-componentDidUpdate(){state update code}, componentWillUnmount(){destruction code}
+the component lifecycle:
+- - componentDidMount() {initialzation code};
+- - componentDidUpdate() {state update code};
+- - componentWillUnmount() {destruction code}
 - useContext() - Allows you to work with React's Context
 API; you can share data without passing props
 
@@ -20,7 +22,10 @@ Additional Hooks
 - useLayoutEffect()
 - useDebugValue()
 
-
+## References
+Kent C. Dodds
+How to use React Context effectively
+https://kentcdodds.com/blog/how-to-use-react-context-effectively
 
 
 
