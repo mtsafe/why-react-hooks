@@ -4,6 +4,7 @@ import BtnOld from './component/BtnOld/BtnOld.component';
 import BtnUseState from './component/BtnUseState/BtnUseState.component';
 import BtnEffect from './component/BtnEffect/BtnEffect.component';
 import MoodContextProvider from './component/MoodContextProvider/MoodContextProvider.component';
+import BtnUseRef from './component/BtnUseRef/BtnUseRef.component';
 
 function App() {
 
@@ -33,6 +34,8 @@ function App() {
         <BtnEffect />
         <p>MoodContextProvider component using useContext()</p>
         <MoodContextProvider />
+        <p>BtnUseRef component using useRef()</p>
+        <BtnUseRef />
       </main>
     </div>
   );

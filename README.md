@@ -7,17 +7,20 @@ reactive data. When the state changes, useState is used
 to re-render the UI.
 - useEffect() - Performs side effects in function components. useEffect() is used to tell what to do for
 the component lifecycle:
-- - componentDidMount() {initialzation code};
-- - componentDidUpdate() {state update code};
-- - componentWillUnmount() {destruction code}
+  - componentDidMount() {initialzation code};
+  - componentDidUpdate() {state update code};
+  - componentWillUnmount() {destruction code}
 - useContext() - Allows you to work with React's Context
 API; you can share data without passing props
 
 Additional Hooks
+- useRef() - Allows you to create a mutable object that
+keeps the same reference between renders. The mutable value
+does not re-render the UI. Also, a common use is to grab native HTML
+DOM elements.
 - useReducer()
 - useCallback()
 - useMemo()
-- useRef()
 - useImperativeHandle()
 - useLayoutEffect()
 - useDebugValue()
@@ -26,6 +29,10 @@ Additional Hooks
 Kent C. Dodds
 How to use React Context effectively
 https://kentcdodds.com/blog/how-to-use-react-context-effectively
+
+Corbin Crutchley
+React Refs: The Complete Story
+https://unicorn-utterances.com/posts/react-refs-complete-story/
 
 
 
